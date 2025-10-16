@@ -48,7 +48,7 @@ def main_menu():
             date = input("Issue Date (YYYY-MM-DD): ")
             invoice = Invoice(project_id, amount, date)
             invoice.save()
-            print(" Invoice created.")
+            print(" Invoice generated.")
 
         elif choice == '6':
             unpaid = Invoice.get_unpaid()
