@@ -22,7 +22,7 @@ def main_menu():
             phone = input("Phone: ")
             client = Client(name, email, phone)
             client.save()
-            print(f"✅ Client '{name}' added successfully.")
+            print(f" Client '{name}' added successfully.")
 
         elif choice == '2':
             clients = Client.get_all()
@@ -35,7 +35,7 @@ def main_menu():
             client_id = input("Client ID: ")
             project = Project(name, desc, client_id)
             project.save()
-            print("✅ Project added.")
+            print(" Project added.")
 
         elif choice == '4':
             projects = Project.get_all()
@@ -48,7 +48,7 @@ def main_menu():
             date = input("Issue Date (YYYY-MM-DD): ")
             invoice = Invoice(project_id, amount, date)
             invoice.save()
-            print("✅ Invoice created.")
+            print(" Invoice created.")
 
         elif choice == '6':
             unpaid = Invoice.get_unpaid()
@@ -58,7 +58,7 @@ def main_menu():
         elif choice == '7':
             invoice_id = input("Invoice ID to mark as paid: ")
             Invoice.mark_paid(invoice_id)
-            print("✅ Invoice marked as paid.")
+            print(" Invoice marked as paid.")
 
         elif choice == '8':
             print("Goodbye!")
