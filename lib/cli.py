@@ -58,7 +58,7 @@ def main_menu():
         elif choice == '7':
             invoice_id = input("Invoice ID to mark as paid: ")
             Invoice.mark_paid(invoice_id)
-            print(" Invoice marked as paid.")
+            print(" Invoice  paid.")
 
         elif choice == '8':
             print("Goodbye!")
